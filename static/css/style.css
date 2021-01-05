@@ -1,0 +1,77 @@
+.outer-container {
+  margin: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.image-component {
+  height: 18rem;
+  width: 18rem;
+  box-shadow: 2px 2px #888888;
+}
+
+body {
+  font-family: "Just Another Hand", cursive;
+  background: #f3f3f3;
+}
+
+.image-component:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 0.8fr));
+  grid-gap: 6px;
+  /* border: 1px solid rebeccapurple; */
+  margin-top: 2%;
+}
+
+.card {
+  border-radius: 0.25rem;
+  background-color: transparent;
+  border-style: none;
+  margin: 3%;
+}
+
+.inputbox {
+  margin: 6px;
+  margin-left: 0px;
+  padding-left: 0%;
+  width: 300px;
+  padding: 10px;
+}
+
+.buttonhere {
+  margin: 6px;
+  margin-left: 0px;
+  margin-bottom: 5px;
+}
+
+.Mainsection {
+  padding: 1rem 1rem;
+  display: inline-block;
+  border: 3px solid #333333;
+  font-size: 2rem;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  /* background: #ffffff; */
+  position: relative;
+
+  &::before {
+    content: "";
+    border: 2px solid #353535;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+  }
+}
